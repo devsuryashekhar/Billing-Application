@@ -1,0 +1,127 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Invoice Container */
+.invoice-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* Header Section */
+.invoice-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+.invoice-header h1 {
+    font-size: 2em;
+    color: #4CAF50;
+    margin: 0;
+}
+
+.invoice-header p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Invoice Details */
+.invoice-details {
+    margin-bottom: 30px;
+}
+
+.invoice-details h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.invoice-details .detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.invoice-details .detail-row span {
+    font-size: 1em;
+}
+
+/* Table Styling */
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.invoice-table th,
+.invoice-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.invoice-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.invoice-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.invoice-table tbody tr:hover {
+    background-color: #f1f8f1;
+}
+
+/* Total Summary */
+.invoice-total {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Footer Section */
+.invoice-footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+/* Print-Specific Styles */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .invoice-container {
+        border: none;
+        margin: 0;
+    }
+    .invoice-header h1 {
+        font-size: 1.8em;
+    }
+    .invoice-details h2 {
+        font-size: 1em;
+    }
+    .invoice-table th,
+    .invoice-table td {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
